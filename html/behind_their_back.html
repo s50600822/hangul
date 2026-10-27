@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한국어 학습 — 한국인들의 뒷담화 | Full Podcast Breakdown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#0f140a;--surface:#1a2214;--raised:#242e1c;--ink:#e0e8d8;--dim:#a0b090;
+ --accent:#8aaa6a;--accent2:#c49a61;--line:rgba(224,232,216,.12);
+ --soft:rgba(138,170,106,.11);--warn:rgba(196,154,97,.12);
+ --space:clamp(1rem,2vw,2rem);--radius:12px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Source Sans 3","Noto Sans KR",sans-serif}
+header{padding:4.5rem 1.5rem 3rem;text-align:center;background:radial-gradient(ellipse at top,rgba(106,138,74,.22),transparent 65%);border-bottom:1px solid var(--line)}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-size:.78rem;font-weight:700}
+h1,h2,h3{font-family:"Noto Sans KR","Source Sans 3",sans-serif;line-height:1.35}
+h1{font-size:clamp(2rem,5vw,3.7rem);max-width:1000px;margin:.7rem auto 1rem}
+.subtitle{max-width:760px;margin:auto;color:var(--dim);font-size:1.12rem}
+.pills{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
+.pill{border:1px solid var(--line);border-radius:999px;padding:.25rem .75rem;color:var(--dim);font-size:.82rem}
+main{max-width:1120px;margin:auto;padding:2rem clamp(1rem,3vw,2.5rem) 5rem}
+nav{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 2rem}
+nav a{color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:.35rem .65rem;font-size:.9rem}
+nav a:hover{background:var(--soft)}
+section{margin:3.5rem 0}
+h2{font-size:clamp(1.45rem,3vw,2.15rem);border-bottom:1px solid var(--line);padding-bottom:.65rem;margin-bottom:1.25rem}
+h2 .num{font:700 .85rem "Source Sans 3",sans-serif;color:var(--accent2);letter-spacing:.12em;margin-right:.55rem}
+h3{font-size:1.18rem;margin:1.5rem 0 .45rem;color:#d9e7c8}
+p{margin:.6rem 0 1rem}
+.lead{font-size:1.08rem;color:#d4dfc9}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.15rem 1.25rem;margin:1rem 0;box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.card.green{border-left:4px solid var(--accent)}
+.card.gold{border-left:4px solid var(--accent2)}
+.korean{font-family:"Noto Sans KR",sans-serif;font-size:1.08rem;font-weight:600}
+.roman{color:#b9c99f;font-size:.9rem;font-style:italic}
+.translation{color:var(--dim)}
+.tag{display:inline-block;font-size:.76rem;border-radius:5px;padding:.1rem .45rem;margin:.12rem .15rem .12rem 0;background:var(--soft);color:#c9dfb1}
+.tag.gold{background:var(--warn);color:#e6c99b}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.96rem}
+th,td{border:1px solid var(--line);padding:.65rem .7rem;text-align:left;vertical-align:top}
+th{background:var(--raised);color:#d9e7c8;font-weight:700}
+td:first-child{font-family:"Noto Sans KR",sans-serif;font-weight:600}
+code{background:#293322;color:#d9e7c8;border-radius:4px;padding:.12rem .3rem;font-size:.92em}
+.callout{padding:1rem 1.1rem;border-radius:8px;background:var(--soft);border:1px solid rgba(138,170,106,.2);margin:1rem 0}
+.caution{background:var(--warn);border-color:rgba(196,154,97,.25)}
+.small{font-size:.9rem;color:var(--dim)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+details{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.75rem 1rem;margin:.7rem 0}
+summary{cursor:pointer;font-weight:700;color:#d9e7c8}
+details p:last-child{margin-bottom:.25rem}
+hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+footer{color:var(--dim);border-top:1px solid var(--line);padding:2rem 1rem;text-align:center;font-size:.9rem}
+@media(max-width:640px){body{font-size:15px}header{padding:3rem 1rem 2rem}th,td{padding:.5rem;font-size:.9rem}.card{padding:1rem}}
+@media print{body{background:white;color:#222}header{background:white;border-bottom:2px solid #777}.card,details{background:#fff;box-shadow:none;border-color:#ccc}h2,h3,summary,.korean,th{color:#222}th{background:#eee}td,th{border-color:#bbb}.translation,.small,.subtitle{color:#555}nav{display:none}a{color:#222}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Intermediate Korean · Listening & Usage</div>
+  <h1>한국인들의 뒷담화</h1>
+  <p class="subtitle">How Koreans talk behind someone’s back — a vocabulary, grammar, nuance, and discourse analysis of the podcast transcript.</p>
+  <div class="pills"><span class="pill">Intermediate</span><span class="pill">Spoken Korean</span><span class="pill">Slang & idioms</span><span class="pill">Romanization included</span></div>
+</header>
+<main>
+<nav aria-label="Contents">
+<a href="#overview">Overview</a><a href="#scenes">Scene breakdown</a><a href="#vocab">Vocabulary</a><a href="#grammar">Grammar</a><a href="#idioms">Idioms & slang</a><a href="#pronunciation">Pronunciation</a><a href="#discourse">Discourse analysis</a><a href="#summary">Patterns</a><a href="#quiz">Review quiz</a>
+</nav>
+
+<section id="overview">
+<h2><span class="num">01</span> What this episode teaches</h2>
+<p class="lead">The podcast uses workplace gossip and relationship scenarios to teach informal expressions for gossip, hypocrisy, overstepping social boundaries, and manipulating relationships.</p>
+<div class="grid">
+ <div class="card green"><h3>Core topic</h3><p><span class="korean">뒷담화 / 뒷담</span> (<em>dwitdamhwa / dwitdam</em>) means talking negatively about someone who is not present. The shortened form <code>뒷담</code> is common in casual speech.</p></div>
+ <div class="card green"><h3>Register</h3><p>Many expressions are casual, judgemental, or rude. They are useful for understanding dramas and real conversations, but are not neutral vocabulary for formal situations.</p></div>
+ <div class="card gold"><h3>Interpretation warning</h3><p>The transcript reports the host’s interpretation of a 2025 study about gossip and relationship satisfaction. The lesson explains what the speaker says; it does not independently verify the study’s findings.</p></div>
+</div>
+<div class="callout"><strong>Romanization note:</strong> Romanization is included as a reading aid, not as a perfect pronunciation guide. Korean sound changes can make the spoken form differ from a letter-by-letter rendering. Hangul remains the best guide once you can read it.</div>
+</section>
+
+<section id="scenes">
+<h2><span class="num">02</span> Guided breakdown by scene</h2>
+<p>Rather than translating every repeated filler word, this section breaks down the transcript’s key sentences and shows how the grammar works in natural speech.</p>
+
+<div class="card green">
+<h3>Opening: defining 뒷담화</h3>
+<p class="korean">다른 사람이 없는 자리에서, 뒤에서 그 사람에 대해서 수군수군 안 좋게 나쁘게 말하는 걸 뒷담화한다고 하는데요.</p>
+<p class="roman">Dareun sarami eomneun jarieseo, dwieseo geu sarame daehaeseo sugunsugun an jokke nappeuge malhaneun geol dwitdamhwahandago haneundeyo.</p>
+<p class="translation">“Talking about someone negatively behind their back when they aren’t there is what we call 뒷담화.”</p>
+<table><thead><tr><th>Chunk</th><th>Meaning / function</th></tr></thead><tbody>
+<tr><td>다른 사람이 없는 자리에서</td><td><em>in a situation/place where the other person isn’t present</em>. <code>-에서</code> marks the setting in which an action occurs.</td></tr>
+<tr><td>그 사람에 대해서</td><td><em>about that person</em>. <code>에 대해서</code> means “about / concerning.”</td></tr>
+<tr><td>수군수군</td><td>Whispering or murmuring among people, often secretively. It is a mimetic/adverbial expression.</td></tr>
+<tr><td>말하는 걸</td><td><code>말하는 것</code> (“the act of saying/talking”) contracted to <code>말하는 걸</code> in speech; the object marker <code>을</code> becomes <code>걸</code> after contraction.</td></tr>
+<tr><td>뒷담화한다고 하는데요</td><td><code>뒷담화하다</code> + quoted-content marker <code>-다고 하다</code> (“call/say that it is gossip”) + <code>-는데요</code>, which introduces or frames an explanation.</td></tr>
+</tbody></table>
+<div class="callout"><strong>Listening tip:</strong> Spoken Korean frequently compresses <code>것을 → 걸</code>, <code>것은 → 건</code>, and <code>것이 → 게</code>. Recognizing these contractions makes long sentences easier to parse.</div>
+</div>
+
+<div class="card green">
+<h3>“These are red flags”: a warning list</h3>
+<p class="korean">누가 이런 말을 하면서 여러분들한테 대화를 건다? 음, 레드플래그입니다. 피하십시오. 피곤해집니다.</p>
+<p class="roman">Nuga ireon mareul hamyeonseo yeoreobundeulhante daehwareul geonda? Eum, redeu peullaegimnida. Pihasipsio. Pigonhaejimnida.</p>
+<p class="translation">“If someone starts a conversation with you by saying things like this? Hmm, that’s a red flag. Avoid them. It’ll be exhausting.”</p>
+<ul>
+<li><code>-(으)면서</code> means “while doing” or “as [someone] does.” Here, the person uses these phrases while initiating a conversation.</li>
+<li><code>대화를 걸다</code> is a set expression meaning “to start/initiate a conversation with someone.” It is not literally “hang a conversation.”</li>
+<li><code>피하십시오</code> is a formal, firm imperative of <code>피하다</code> (“avoid”). Its exaggerated form adds comic emphasis.</li>
+<li><code>피곤해집니다</code> = <code>피곤하다</code> (“be tired/exhausting”) + <code>-아/어지다</code> (“become”). “It becomes tiring.”</li>
+</ul>
+</div>
+
+<div class="card green">
+<h3>Scene 1: the colleague who contradicts themself</h3>
+<p class="korean">소개팅 앱으로 사람 만나는 거 자기는 이해 안 된다고 했던 것 같은데?</p>
+<p class="roman">Sogaeting aebeuro saram mannaneun geo jagineun ihae an doendago haetdeon geot gateunde?</p>
+<p class="translation">“I thought they said they couldn’t understand meeting people through dating apps.”</p>
+<ul>
+<li><code>소개팅 앱으로</code>: <em>through / using a dating-app service</em>. <code>(으)로</code> marks a means or method.</li>
+<li><code>사람 만나는 거</code>: “meeting people”; the verb phrase is nominalized with colloquial <code>거</code> (= <code>것</code>).</li>
+<li><code>이해 안 된다고</code>: reported speech, “(they) said it didn’t make sense / they couldn’t understand it.” The negative <code>안</code> comes before the verb.</li>
+<li><code>했던 것 같은데?</code>: “I think [they] said/did that, though?” <code>-던</code> often recalls a past or previously ongoing/repeated situation; <code>것 같다</code> softens the claim into “seems / I think.”</li>
+</ul>
+<p class="small">The transcript then uses <code>자만추</code>, an abbreviation for <code>자연스러운 만남 추구</code> (“seeking a natural/organic meeting”). It commonly contrasts with meeting through a matchmaking service or dating app.</p>
+</div>
+
+<div class="card green">
+<h3>Scene 1: hearsay and surprise</h3>
+<p class="korean">알고 보니까 김 대리 소개팅 엄청 한대.</p>
+<p class="roman">Algo bonikka Gim daeri sogaeting eomcheong handae.</p>
+<p class="translation">“It turns out Assistant Manager Kim goes on loads of blind dates, apparently.”</p>
+<ul>
+<li><code>알고 보니까</code>: “when I found out / it turns out.” This frames a discovery that changes the speaker’s understanding.</li>
+<li><code>김 대리</code>: “Assistant Manager Kim” or “Kim, the company employee with the title 대리.” Korean job titles are commonly used with names instead of Mr./Ms.</li>
+<li><code>엄청</code>: “extremely / a lot,” an informal intensifier.</li>
+<li><code>한대</code> here is colloquial reported speech, roughly <code>한다고 해</code> (“I hear that [they] do”). The exact subject is inferred from context.</li>
+</ul>
+</div>
+
+<div class="card green">
+<h3>Scene 2: an intern is “overstepping”</h3>
+<p class="korean">아니 진짜 이러면 우리가 뭐가 되냐고. 왜 이렇게 나대?</p>
+<p class="roman">Ani jinjja ireomyeon uriga mwoga doenyago. Wae ireoke nadae?</p>
+<p class="translation">“Seriously, what does that make us, then? Why are they acting so over-the-top / overstepping like this?”</p>
+<ul>
+<li><code>이러면</code> = <code>이렇다</code> (“be like this”) + conditional <code>-(으)면</code> (“if”).</li>
+<li><code>우리가 뭐가 되냐고</code> is an emotionally charged rhetorical question: “What are we supposed to look like / what does that make us?” The final <code>-냐고</code> can quote or echo a question.</li>
+<li><code>나대다</code> is a negative judgement: to act too conspicuously, butt in, show off, or behave as though one’s role/status gives one more license than others think appropriate.</li>
+</ul>
+<div class="callout caution"><strong>Pragmatic nuance:</strong> <code>나대다</code> is not an objective description like “speak a lot.” It usually signals the speaker’s disapproval. The same behaviour could be described more positively as <code>적극적이다</code> (“proactive”) or <code>자신감이 있다</code> (“confident”).</div>
+</div>
+
+<div class="card green">
+<h3>Scene 3: passing contradictory stories between two people</h3>
+<p class="korean">어디 가서 나한테 들었다고는 말하지 말고.</p>
+<p class="roman">Eodi gaseo nahante deureotdagoneun malhaji malgo.</p>
+<p class="translation">“Don’t go telling people that you heard it from me.”</p>
+<ul>
+<li><code>어디 가서</code> literally means “go somewhere and…,” but often means “elsewhere / to other people.”</li>
+<li><code>나한테</code> = “from me / to me,” depending on the verb. With <code>듣다</code> (“hear”), it means the source: “heard from me.”</li>
+<li><code>들었다고</code> = <code>듣다</code> (hear) + past <code>-었-</code> + reported speech <code>-다고</code>.</li>
+<li><code>말하지 말고</code> = <code>말하다</code> (“say”) + negative command <code>-지 말다</code> (“don’t do”) + <code>-고</code>, which can connect to what follows or leave the instruction hanging.</li>
+</ul>
+<p class="small">This phrase is a classic secrecy disclaimer in the podcast’s examples. It can signal trust, but in a gossip context it also helps the speaker avoid accountability.</p>
+</div>
+
+<div class="card green">
+<h3>Scene 3: “It can’t be true!”</h3>
+<p class="korean">그럴 리가 없는데?</p>
+<p class="roman">Geureol riga eomneunde?</p>
+<p class="translation">“There’s no way that’s true, though?” / “That can’t be!”</p>
+<ul>
+<li><code>그럴 리가 없다</code> is a fixed pattern meaning “there is no possibility/reason that [it] would be so.”</li>
+<li><code>그럴</code> = <code>그러하다</code> / <code>그렇다</code> used attributively before <code>리</code> (“possibility / reason”).</li>
+<li><code>-는데?</code> can express contrast, surprise, or an unfinished thought inviting a response.</li>
+</ul>
+</div>
+</section>
+
+<section id="vocab">
+<div class="callout"><strong>Hanja note:</strong> The Hanja column gives the conventional Chinese characters for Sino-Korean words where they are established. A dash means there is no useful standard Hanja equivalent for the whole expression. Some expressions mix Sino-Korean roots with native Korean grammar or English, so the characters shown may apply only to part of the word. Hanja are etymological aids; modern Korean is normally written in Hangul.</div>
+
+<h2><span class="num">03</span> High-value vocabulary</h2>
+<p>These are the episode’s most reusable words and expressions. Romanization is approximate; meanings are contextual rather than one-to-one dictionary substitutions.</p>
+<table>
+<thead><tr><th>Korean</th><th>Romanization</th><th>Hanja (if applicable)</th><th>Meaning / usage</th><th>Register / note</th></tr></thead>
+<tbody>
+<tr><td>뒷담화</td><td>dwitdamhwa</td><td>談話 (담화 only)</td><td>Gossiping negatively about someone who is absent; talking behind someone’s back.</td><td>Common noun; shortened to 뒷담.</td></tr>
+<tr><td>뒷담을 까다 / 뒷담 까다</td><td>dwitdameul kkada / dwitdam kkada</td><td>談話 (담화 only)</td><td>To gossip / bad-mouth someone behind their back.</td><td>Very colloquial; 까다 adds a rough, slangy feel.</td></tr>
+<tr><td>수군수군하다</td><td>sugun-sugun-hada</td><td>—</td><td>To whisper or murmur among yourselves, often secretly.</td><td>Suggests hushed, private talk.</td></tr>
+<tr><td>소개팅</td><td>sogaeting</td><td>紹介 + English “meeting” (hybrid)</td><td>A blind date, often arranged by a mutual acquaintance.</td><td>Everyday Korean dating vocabulary.</td></tr>
+<tr><td>자만추</td><td>jaman-chu</td><td>自然 + 追求 (hybrid abbreviation)</td><td>Short for 자연스러운 만남 추구: preferring to meet someone naturally.</td><td>Contemporary abbreviation; contrast with 앱/소개팅.</td></tr>
+<tr><td>질색하다</td><td>jilsaek-hada</td><td>疾色 (질색)</td><td>To detest something; to be strongly put off by it.</td><td>Stronger than simply 싫어하다.</td></tr>
+<tr><td>철벽 치다</td><td>cheolbyeok chida</td><td>鐵壁 (철벽)</td><td>To put up a wall; firmly shut down romantic advances or leave no opening.</td><td>Colloquial dating expression.</td></tr>
+<tr><td>뒤에서 호박씨 까다</td><td>dwieseo hobakssi kkada</td><td>—</td><td>To act one way in front of people and another behind their backs; to be two-faced.</td><td>Idiomatic; not a literal pumpkin-seed instruction.</td></tr>
+<tr><td>가식</td><td>gasik</td><td>假飾</td><td>Artificiality, pretence, insincerity.</td><td>Often used in criticism.</td></tr>
+<tr><td>가식 떨다</td><td>gasik tteolda</td><td>假飾 (가식)</td><td>To put on an insincere show; to act fake or affected.</td><td>Judgemental, colloquial.</td></tr>
+<tr><td>엄살 떨다</td><td>eomsal tteolda</td><td>—</td><td>To exaggerate pain or hardship; to make a fuss about being hurt.</td><td>Usually critical or teasing.</td></tr>
+<tr><td>호들갑 떨다</td><td>hodeulgap tteolda</td><td>—</td><td>To make a huge fuss; overreact dramatically.</td><td>Usually negative or teasing.</td></tr>
+<tr><td>수다 떨다</td><td>suda tteolda</td><td>—</td><td>To chat / talk away.</td><td>Usually neutral or positive; important exception to 떨다’s negative feel.</td></tr>
+<tr><td>거슬리다</td><td>geoseullida</td><td>—</td><td>To bother, grate on, or rub someone the wrong way.</td><td>Describes the listener’s reaction.</td></tr>
+<tr><td>나대다</td><td>nadaeda</td><td>—</td><td>To overstep, show off, butt in, or draw attention in a way the speaker dislikes.</td><td>Negative, casual, potentially insulting.</td></tr>
+<tr><td>씹다</td><td>ssipda</td><td>—</td><td>Literally “chew”; slangily, to diss/criticize/talk badly about someone.</td><td>Casual slang; context determines meaning.</td></tr>
+<tr><td>눈치 보이다</td><td>nunchi boida</td><td>—</td><td>To feel self-conscious about others’ reactions; to feel pressure from the social atmosphere.</td><td>Related to 눈치, reading the room.</td></tr>
+<tr><td>음침하다</td><td>eumchim-hada</td><td>陰沈 (음침)</td><td>To seem shady, gloomy, creepy, or sinister.</td><td>Negative judgement of a person or atmosphere.</td></tr>
+<tr><td>이간질하다</td><td>iganjil-hada</td><td>離間 + native suffix 질</td><td>To sow discord between people; to manipulate people into distrusting each other.</td><td>Strongly negative.</td></tr>
+<tr><td>손민수하다</td><td>sonminsu-hada</td><td>— (character name)</td><td>To copy someone’s style, purchases, habits, or choices, especially from admiration or envy.</td><td>Internet/pop-culture slang; can be playful or accusatory.</td></tr>
+<tr><td>손민수템</td><td>sonminsu-tem</td><td>— (character name + English “item”)</td><td>An item copied or purchased because a celebrity/influencer or admired person uses it.</td><td>Fan and shopping slang.</td></tr>
+<tr><td>갈구다</td><td>galguda</td><td>—</td><td>To hassle, berate, nag, or give someone a hard time.</td><td>Very colloquial; often workplace/school context.</td></tr>
+<tr><td>털어놓다</td><td>teoreonota</td><td>—</td><td>To open up and tell someone honestly; to get something off one’s chest.</td><td>Often emotional disclosure.</td></tr>
+<tr><td>돈독해지다</td><td>dondokhaejida</td><td>敦篤 (돈독)</td><td>To become closer/stronger, especially a relationship or bond.</td><td>Common collocation: 관계가 돈독해지다.</td></tr>
+<tr><td>유대감</td><td>yudaegam</td><td>紐帶感</td><td>A sense of bond, connection, or solidarity.</td><td>Neutral-to-formal.</td></tr>
+<tr><td>가치관</td><td>gachigwan</td><td>價値觀</td><td>Values; one’s underlying outlook on what matters or is right.</td><td>Useful in serious discussion.</td></tr>
+<tr><td>균열</td><td>gyunyeol</td><td>龜裂</td><td>A crack, fracture, or rift; literal or metaphorical.</td><td>More formal/literary than 틈.</td></tr>
+<tr><td>부쩍</td><td>bujjeok</td><td>—</td><td>Noticeably, markedly, all of a sudden more than before.</td><td>Often with change or increase.</td></tr>
+<tr><td>붙어 다니다</td><td>but-eo danida</td><td>—</td><td>To keep hanging around together / be together constantly.</td><td>Can sound neutral or slightly judgemental.</td></tr>
+<tr><td>걸리적거리다</td><td>geollijeokgeorida</td><td>—</td><td>To get in the way, be a nuisance, or obstruct.</td><td>Negative; can describe people or objects.</td></tr>
+<tr><td>여지</td><td>yeoji</td><td>餘地</td><td>Room, leeway, possibility, or an opening.</td><td>여지를 주다 = give someone an opening.</td></tr>
+<tr><td>못마땅하다</td><td>mot-madang-hada</td><td>—</td><td>To be displeased with or disapprove of something.</td><td>Useful adjective for quiet disapproval.</td></tr>
+<tr><td>동조하다</td><td>dongjohada</td><td>同調</td><td>To agree with, go along with, or support someone’s view/action.</td><td>More formal than 맞장구치다.</td></tr>
+<tr><td>엮이다</td><td>yeokkida</td><td>—</td><td>To get entangled or involved, often unwillingly.</td><td>여기에 엮이다 = get mixed up in this.</td></tr>
+</tbody></table>
+
+<h3>Useful collocations to learn as whole chunks</h3>
+<div class="grid">
+<div class="card"><p class="korean">뒷담화를 나누다</p><p class="roman">dwitdamhwareul nanuda</p><p class="translation">to exchange gossip / gossip together</p></div>
+<div class="card"><p class="korean">선을 넘다</p><p class="roman">seoneul neomda</p><p class="translation">to cross a line / go too far</p></div>
+<div class="card"><p class="korean">아는 척하다</p><p class="roman">aneun cheok-hada</p><p class="translation">to act as if one knows / show off knowledge</p></div>
+<div class="card"><p class="korean">잘난 척하다</p><p class="roman">jallan cheok-hada</p><p class="translation">to act superior / show off</p></div>
+<div class="card"><p class="korean">말을 끊다</p><p class="roman">mareul kkeunta</p><p class="translation">to interrupt someone</p></div>
+<div class="card"><p class="korean">말을 퍼뜨리다</p><p class="roman">mareul peotteurida</p><p class="translation">to spread a story/rumour</p></div>
+<div class="card"><p class="korean">관계를 멀리하다</p><p class="roman">gwangyereul meollihada</p><p class="translation">to distance oneself from a relationship/person</p></div>
+<div class="card"><p class="korean">마음이 통하다</p><p class="roman">maeumi tonghada</p><p class="translation">to understand each other / be on the same wavelength</p></div>
+</div>
+</section>
+
+<section id="grammar">
+<h2><span class="num">04</span> Grammar patterns from the episode</h2>
+<table><thead><tr><th>Pattern</th><th>Meaning / use</th><th>Example from the episode</th><th>How to read it</th></tr></thead><tbody>
+<tr><td>N이/가 없는</td><td>“where there is no N / where N is absent”; negative 있다/없다 modifies the noun.</td><td>다른 사람이 없는 자리</td><td>“a place/situation where the other person isn’t present.”</td></tr>
+<tr><td>V-(으)ㄹ수록</td><td>“the more…, the more…”</td><td>뒷담화를 많이 나눌수록</td><td>“the more they share gossip…” The outcome follows later: satisfaction/happiness tends to be higher.</td></tr>
+<tr><td>V-는 걸</td><td>Colloquial nominalization: “the act/fact of V-ing,” often object-marked.</td><td>말하는 걸 뒷담화한다고</td><td><code>말하는 것을</code> contracts to <code>말하는 걸</code>.</td></tr>
+<tr><td>V-(으)면서</td><td>While doing A, do B; simultaneous action or manner.</td><td>이런 말을 하면서 대화를 건다</td><td>“starts a conversation while saying these things.”</td></tr>
+<tr><td>V-다고 하다</td><td>Reported speech after a statement.</td><td>이해 안 된다고 했던 것 같은데</td><td>“I think they said they didn’t understand it.”</td></tr>
+<tr><td>V-ㄴ/는대(요)</td><td>Colloquial reported speech: “I hear that… / they say…”</td><td>소개팅 엄청 한대</td><td>“I hear they go on a lot of blind dates.”</td></tr>
+<tr><td>V-던 것 같다</td><td>“I think [someone] used to / had [done]…”; recollection of a past scene or statement.</td><td>했던 것 같은데?</td><td>“I think they said/did that, though?” Context determines the best translation.</td></tr>
+<tr><td>V-아/어 보니까</td><td>“When I tried/saw/found out…”; often introduces a discovery.</td><td>알고 보니까</td><td>“It turns out / when I found out.”</td></tr>
+<tr><td>V-지 말다</td><td>Negative command: “don’t do V.”</td><td>말하지 말고</td><td>“Don’t say/tell [them]…”</td></tr>
+<tr><td>V-(으)면</td><td>“If/when…” condition.</td><td>이러면 우리가 뭐가 되냐고</td><td>“If this happens, what does that make us?”</td></tr>
+<tr><td>V-는 것 같다</td><td>“It seems / I think…”; softens a claim or marks uncertainty.</td><td>소개해줬다는 것 같은데</td><td>“It seems [someone] set them up…”</td></tr>
+<tr><td>N인 척 / A-(으)ㄴ 척 / V-는 척하다</td><td>To pretend to be / act as if.</td><td>착한 척, 좋은 사람인 척</td><td>“pretend to be kind / pretend to be a good person.”</td></tr>
+<tr><td>V-아/어지다</td><td>To become or come to be in a state.</td><td>피곤해집니다</td><td><code>피곤하다 → 피곤해지다</code>, “become tiring/exhausting.”</td></tr>
+<tr><td>V-다 보니까</td><td>As a result of doing/experiencing something over time, a discovery/result emerges.</td><td>살다 보니까</td><td>“as I’ve lived / from living and experiencing life…”</td></tr>
+<tr><td>V-아/어도</td><td>“Even if / even though…”</td><td>좋아하는 게 달라도</td><td>“even if the things we like are different.”</td></tr>
+<tr><td>V-(으)ㄹ 수 있다</td><td>Ability or possibility: “can.”</td><td>같이 할 수 있으니까</td><td>“because we can do it together.”</td></tr>
+<tr><td>N에 대한</td><td>“about / regarding N,” used before a noun.</td><td>악역에 대한 뒷담</td><td>“gossip about the villain.”</td></tr>
+<tr><td>V-게끔</td><td>“so that / in such a way that,” expressing purpose or result.</td><td>이해하게끔 만들어 주다</td><td>“help make someone understand.”</td></tr>
+<tr><td>V-려고 하다</td><td>To intend/try to do something.</td><td>뒷담화를 시작하려고 한다</td><td>“is about to / is trying to start gossip.”</td></tr>
+<tr><td>N 사이에서</td><td>“between / among N”; social relationship context.</td><td>연인 사이에서는</td><td>“between romantic partners.”</td></tr>
+</tbody></table>
+
+<h3>Speech style: why the transcript sounds conversational</h3>
+<div class="card">
+<p><span class="tag">Casual</span> <code>뭐가 되냐고</code>, <code>왜 이렇게 나대?</code>, <code>말도 안 돼</code></p>
+<p><span class="tag">Polite explanatory</span> <code>알려 드리려고 합니다</code>, <code>사용하시면 됩니다</code></p>
+<p><span class="tag">Formal / deliberately emphatic</span> <code>피하십시오</code></p>
+<p>The host shifts between casual examples, polite teaching language, and exaggerated commands for humour. In Korean, register changes are part of the meaning: they help establish whether the speaker is teaching, joking, quoting a character, or judging someone.</p>
+</div>
+
+<h3>Three distinctions worth remembering</h3>
+<div class="card gold"><strong>1. -다고 vs. -대</strong><p><code>그렇게 말했다고 해</code> is a more explicit reported statement (“they say [someone] said that”). <code>한대</code> is a compressed colloquial form of <code>한다고 해</code> (“I hear they do”). In fast speech, the endings can be hard to distinguish, so use context.</p></div>
+<div class="card gold"><strong>2. -는데요 is not just “but”</strong><p>It can set up background, soften an explanation, signal contrast, or leave the conversation open. Translate its discourse function, not just the ending.</p></div>
+<div class="card gold"><strong>3. Korean often omits recoverable subjects</strong><p>In <code>엄청 한대</code>, the subject “they” is understood from the previous line. Korean speakers regularly leave out pronouns when the context supplies them.</p></div>
+</section>
+
+<section id="idioms">
+<h2><span class="num">05</span> Idioms, slang, and word formation</h2>
+<div class="card green">
+<h3>뒤에서 호박씨 까다</h3>
+<p class="roman">dwieseo hobakssi kkada</p>
+<p>Literally, “to crack pumpkin seeds behind [someone’s] back.” In this episode it describes a person who presents a respectable or kind face publicly but behaves differently in private. The key idea is hypocrisy or two-faced behaviour, not merely gossip itself.</p>
+<p><strong>Example:</strong> <span class="korean">앞에서는 친한 척하더니 뒤에서는 호박씨를 까더라.</span><br><span class="roman">Apeseoneun chinhan cheok-hadeoni dwieseo hobakssireul kkadeora.</span><br><span class="translation">“They acted friendly to my face, but talked behind my back.”</span></p>
+</div>
+<div class="card green">
+<h3>가식 떨다: why 떨다?</h3>
+<p>The host explicitly contrasts this <code>떨다</code> with the more familiar verb “to tremble/shake.” In expressions such as <code>가식 떨다</code>, <code>엄살 떨다</code>, and <code>호들갑 떨다</code>, it means to put on or display a conspicuous, often excessive performance.</p>
+<table><thead><tr><th>Expression</th><th>Natural meaning</th><th>Example</th></tr></thead><tbody>
+<tr><td>가식 떨다</td><td>Put on a fake/insincere act.</td><td><span class="korean">착한 척하면서 가식 떨지 마.</span><br><span class="roman">Chakan cheokhamyeonseo gasik tteolji ma.</span><br>“Don’t put on a fake act pretending to be kind.”</td></tr>
+<tr><td>엄살 떨다</td><td>Overstate pain or difficulty.</td><td><span class="korean">그 정도로 엄살 떨 일은 아니야.</span><br><span class="roman">Geu jeongdoro eomsal tteol ireun aniya.</span><br>“It’s not something to make such a fuss about.”</td></tr>
+<tr><td>호들갑 떨다</td><td>Overreact / make a huge fuss.</td><td><span class="korean">아직 결과도 안 나왔는데 호들갑 떨지 마.</span><br><span class="roman">Ajik gyeolgwado an nawonneunde hodeulgap tteolji ma.</span><br>“The results aren’t even out yet, so don’t make a huge fuss.”</td></tr>
+<tr><td>수다 떨다</td><td>Chat / talk away.</td><td><span class="korean">친구랑 카페에서 수다 떨었어.</span><br><span class="roman">Chingurang kapeseo suda tteoreosseo.</span><br>“I chatted with a friend at a café.”</td></tr>
+</tbody></table>
+<p class="small">Nuance: the first three are usually critical because they frame the behaviour as excessive or affected. <code>수다 떨다</code> is a normal, often friendly expression; do not assume 떨다 always makes a phrase negative.</p>
+</div>
+
+<div class="card green">
+<h3>철벽 치다: “put up an iron wall”</h3>
+<p><code>철벽</code> literally means “iron wall.” <code>철벽 치다</code> means to shut down advances so firmly that the other person sees no opening. The episode focuses on dating, but the broader metaphor is creating a strong barrier.</p>
+<p><strong>Examples:</strong></p>
+<ul><li><span class="korean">그 사람은 관심 없는 사람한테 철벽을 쳐.</span> <span class="roman">Geu sarameun gwansim eomneun saramhante cheolbyeogeul chyeo.</span> — “They shut down people they aren’t interested in.”</li>
+<li><span class="korean">철벽 치는 것 같아서 더는 연락 안 했어.</span> <span class="roman">Cheolbyeok chineun geot gataseo deoneun yeollak an haesseo.</span> — “They seemed to be shutting me out, so I didn’t contact them again.”</li></ul>
+<p><code>철벽남</code> / <code>철벽녀</code> label a man/woman who puts up that wall. These labels can be playful, admiring, or critical depending on context.</p>
+</div>
+
+<div class="card green">
+<h3>나대다: an evaluative verb, not an objective category</h3>
+<p>The host makes an important sociolinguistic point: the same person can be judged as <code>적극적이다</code> (“proactive”), <code>자신감이 있다</code> (“confident”), or <code>나댄다</code> (“oversteps / shows off”), depending on the observer and social context.</p>
+<table><thead><tr><th>Expression</th><th>Romanization</th><th>Nuance</th></tr></thead><tbody>
+<tr><td>왜 저렇게 나대?</td><td>Wae jeoreoke nadae?</td><td>“Why are they acting so obnoxiously?” Strongly judgemental.</td></tr>
+<tr><td>적당히 좀 나대라.</td><td>Jeokdanghi jom nadaera.</td><td>“Tone it down / stop overdoing it.” Rude, scolding.</td></tr>
+<tr><td>나대지 마.</td><td>Nadaeji ma.</td><td>“Stop showing off / stay out of it.” Direct and potentially insulting.</td></tr>
+<tr><td>내가 오늘 좀 나댔나?</td><td>Naega oneul jom nadaenna?</td><td>“Was I a bit too much today?” Self-critical reflection.</td></tr>
+</tbody></table>
+<div class="callout caution">Because <code>나대다</code> encodes disapproval, it can reveal more about the speaker’s attitude than about the target’s actual behaviour. Avoid using it casually about someone unless you intend that judgement.</div>
+</div>
+
+<div class="card green">
+<h3>이간질: the suffix-like use of 질</h3>
+<p><code>이간</code> is a Sino-Korean element meaning to separate or create distance between people. <code>이간질하다</code> means to sow discord by saying different things to different people or encouraging them to distrust one another.</p>
+<p>The host explains <code>-질</code> as a form used in some nouns for an action regarded as low, bad, or contemptible. Examples in the transcript include:</p>
+<table><thead><tr><th>Word</th><th>Romanization</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>도둑질</td><td>dodukjil</td><td>the act of stealing / theft</td></tr>
+<tr><td>싸움질</td><td>ssaumjil</td><td>fighting, picking fights</td></tr>
+<tr><td>손가락질</td><td>songarakjil</td><td>pointing a finger at someone; by extension, blaming or condemning them</td></tr>
+<tr><td>정치질</td><td>jeongchijil</td><td>political manoeuvring or “playing politics,” often pejorative</td></tr>
+</tbody></table>
+<p class="small">This is a useful pattern, not a rule that every word ending in 질 is automatically negative. Learn each word as a vocabulary item and attend to its established meaning.</p>
+</div>
+
+<div class="card green">
+<h3>손민수하다: a character name becomes a verb</h3>
+<p>According to the podcast, the expression comes from Son Minsu, a character in <em>Cheese in the Trap</em>, who copies the protagonist’s style and choices. The name became a colloquial verb meaning to copy someone’s look, habits, possessions, or purchases.</p>
+<ul>
+<li><code>손민수하다</code>: to copy someone’s style/choices.</li>
+<li><code>손민수템</code>: an item someone buys because an admired person owns or uses it.</li>
+<li>Its tone depends on context: it can accuse someone of copying, or playfully describe fan behaviour.</li>
+</ul>
+<p><strong>Example:</strong> <span class="korean">최애가 쓰는 향수라서 나도 손민수했어.</span><br><span class="roman">Choiaega sseuneun hyangsura-seo nado sonminsuhaesseo.</span><br><span class="translation">“It’s the perfume my favourite uses, so I got the same one.”</span></p>
+</div>
+</section>
+
+<section id="pronunciation">
+<h2><span class="num">06</span> Pronunciation and spoken-form notes</h2>
+<table><thead><tr><th>Written form</th><th>Approximate spoken form</th><th>What to notice</th></tr></thead><tbody>
+<tr><td>뒷담화</td><td>dwit-dam-hwa (often heard with a tense ㄸ-like onset in compound pronunciation)</td><td>The ㅅ in 뒷담화 participates in Korean compound sound rules; do not expect a simple English “s” sound. Actual realization may vary by speaker and analysis of the compound.</td></tr>
+<tr><td>것을 → 걸</td><td>geoseul → geol</td><td>Common contraction in conversational Korean; e.g. <code>말하는 걸</code>.</td></tr>
+<tr><td>것은 → 건</td><td>geoseun → geon</td><td>Common contraction; e.g. <code>중요한 건</code> = “the important thing is…”</td></tr>
+<tr><td>것이 → 게</td><td>geosi → ge</td><td>Common contraction; e.g. <code>좋은 게</code> = “something good / the good thing.”</td></tr>
+<tr><td>한대</td><td>handa(e)</td><td>Often a compressed reported-speech ending from <code>한다고 해</code>; recognize it as “apparently / I hear [they] do.”</td></tr>
+<tr><td>그니까</td><td>geunikka</td><td>Colloquial contraction of <code>그러니까</code> (“exactly / so / that’s what I mean”). Very common in casual speech.</td></tr>
+<tr><td>근데</td><td>geunde</td><td>Colloquial contraction of <code>그런데</code> (“but / by the way / so”). Its discourse function is broader than “but.”</td></tr>
+<tr><td>뭐라나</td><td>mworana</td><td>Part of <code>뭐라나 뭐라나</code> / <code>뭐라나?</code>, a dismissive or vague “something like that, apparently.” Exact nuance depends on intonation.</td></tr>
+</tbody></table>
+<div class="callout"><strong>Listening strategy:</strong> First identify the verb ending and particles, then fill in omitted subjects from context. Do not try to decode every syllable independently; spoken Korean is full of contractions, discourse markers, and recoverable information.</div>
+</section>
+
+<section id="discourse">
+<h2><span class="num">07</span> Discourse and cultural analysis</h2>
+<div class="card">
+<h3>1. Gossip is framed as both social risk and intimacy</h3>
+<p>The host initially calls gossip a “red flag” and says she tries not to participate. Later, she considers how sharing frustrations with a trusted partner may create a feeling of safety and solidarity. These positions are not necessarily contradictory: the episode distinguishes gossip that harms or manipulates someone from private venting that seeks comfort.</p>
+</div>
+<div class="card">
+<h3>2. “Behind their back” language builds a moral narrative</h3>
+<p>Expressions such as <code>뒤에서 호박씨 까다</code>, <code>가식 떨다</code>, and <code>이간질하다</code> do more than describe speech. They frame the speaker as hypocritical, deceptive, or deliberately divisive. These words carry judgement; translating them as neutral “talk” would lose the point.</p>
+</div>
+<div class="card">
+<h3>3. 나대다 shows how social norms are policed through language</h3>
+<p>The host explicitly notes that “overstepping” has no single objective behavioural definition. A confident intern may be viewed as proactive by one person and as <code>나대는</code> by another. The word can therefore police perceived status, turn-taking, modesty, and expectations about who is entitled to speak.</p>
+</div>
+<div class="card">
+<h3>4. Reported speech lets a gossiping speaker distance themself</h3>
+<p>Repeated structures such as <code>들었다는데</code>, <code>말하고 다닌다던데</code>, and <code>어디 가서 나한테 들었다고는 말하지 말고</code> mark information as something heard from someone else. That can communicate uncertainty, but it can also let the speaker spread a claim while avoiding direct responsibility for it.</p>
+</div>
+<div class="card">
+<h3>5. The “shared dislikes” thesis is the host’s reflection</h3>
+<p>In the closing section, the host suggests that shared dislikes and moral judgements may reveal compatibility in a way that shared hobbies do not. She uses a fictional villain as an example: if partners disagree about whether a character’s behaviour is wrong, the disagreement may expose a difference in values. This is the host’s personal interpretation of the study, not a universal rule about relationships.</p>
+</div>
+<div class="card gold">
+<h3>Ethical language note</h3>
+<p>This episode teaches expressions that can be socially damaging if used carelessly. For active speaking, prioritise neutral descriptions such as <code>그 행동이 불편했어</code> (“That behaviour made me uncomfortable”) or <code>그 말은 좀 무례한 것 같아</code> (“I think that comment was a bit rude”) when you want to describe a problem without escalating into insults.</p>
+</div>
+</section>
+
+<section id="summary">
+<h2><span class="num">08</span> Key patterns summary</h2>
+<div class="card"><p><strong>Reported speech</strong></p><p><code>그렇게 말했다고 해.</code> — “They say [someone] said that.”</p><p><code>엄청 한대.</code> — “I hear they do it a lot.”</p><p><code>나한테 들었다고 말하지 마.</code> — “Don’t say you heard it from me.”</p></div>
+<div class="card"><p><strong>Judging behaviour</strong></p><p><code>왜 이렇게 나대?</code> — “Why are they acting so over-the-top?”</p><p><code>가식 떠는 것 같아.</code> — “They seem to be putting on a fake act.”</p><p><code>선을 넘는 것 같아.</code> — “It feels like they’re crossing a line.”</p></div>
+<div class="card"><p><strong>Relationship and emotion</strong></p><p><code>마음이 잘 통해.</code> — “We understand each other well.”</p><p><code>속마음을 털어놓다.</code> — “Open up about one’s true feelings.”</p><p><code>관계가 돈독해지다.</code> — “The relationship/bond grows stronger.”</p></div>
+</section>
+
+<section id="quiz">
+<h2><span class="num">09</span> Review quiz</h2>
+<p>Try answering before opening each explanation.</p>
+<details><summary>1. What is the difference between 뒷담화 and 이간질?</summary><p><strong>Answer:</strong> <code>뒷담화</code> is negative talk about someone who is absent. <code>이간질</code> is actively sowing discord between people, often by telling each side something that damages their relationship.</p></details>
+<details><summary>2. Why is 나대다 more judgemental than 적극적이다?</summary><p><strong>Answer:</strong> <code>적극적이다</code> means proactive/active and can be positive. <code>나대다</code> frames the behaviour as excessive, attention-seeking, intrusive, or beyond the person’s place.</p></details>
+<details><summary>3. What does 뒤에서 호박씨 까다 mean in context?</summary><p><strong>Answer:</strong> To act one way to someone’s face and behave or speak differently behind their back; to be two-faced or hypocritical.</p></details>
+<details><summary>4. Break down 말하지 말고.</summary><p><strong>Answer:</strong> <code>말하다</code> (“say”) + <code>-지 말다</code> (“don’t do”) + connective <code>-고</code>. In context: “Don’t tell [them]…” / “Don’t say it, and…”</p></details>
+<details><summary>5. What is the function of -다고 in 들었다고?</summary><p><strong>Answer:</strong> It marks reported content: “that [someone] heard [it].” In <code>나한테 들었다고 말하지 마</code>, it means “Don’t say that you heard it from me.”</p></details>
+<details><summary>6. What does 수다 떨다 mean, and why is it an important exception?</summary><p><strong>Answer:</strong> It means “to chat / talk away.” Unlike <code>가식 떨다</code>, <code>엄살 떨다</code>, and <code>호들갑 떨다</code>, it is not inherently negative.</p></details>
+<details><summary>7. How can 손민수하다 be used positively?</summary><p><strong>Answer:</strong> A fan may say they “손민수했다” an item because their favourite celebrity owns or uses it. It can mean copying an admired person’s purchase rather than accusing someone of malicious imitation.</p></details>
+<details><summary>8. Translate: 내가 오늘 좀 괜히 너무 나댔나?</summary><p><strong>Answer:</strong> “Was I a bit too much / did I overdo it today for no reason?” The speaker is reflecting critically on their own behaviour.</p></details>
+<details><summary>9. What does -ㄹ수록 express in 많이 나눌수록?</summary><p><strong>Answer:</strong> “The more [they] share…” It sets up a proportional relationship: the more one thing happens, the more another tends to happen.</p></details>
+<details><summary>10. Give a less insulting alternative to 나대지 마.</summary><p><strong>Answer:</strong> Depending on the situation: <code>조금만 차례를 지켜 줄래?</code> (“Could you please wait your turn a little?”) or <code>그 부분은 내가 설명할게.</code> (“I’ll explain that part.”) These address the behaviour without labelling the person.</p></details>
+</section>
+
+<section>
+<h2><span class="num">10</span> Annotation checklist for future lessons</h2>
+<ul>
+<li><strong>Vocabulary:</strong> dictionary form, meaning, romanization, natural collocation, and register.</li>
+<li><strong>Grammar:</strong> what attaches to what, what the ending contributes, and how it works in this sentence.</li>
+<li><strong>Pronunciation:</strong> flag common contractions and sound changes without treating romanization as exact phonetics.</li>
+<li><strong>Pragmatics:</strong> explain whether an expression is neutral, affectionate, rude, judgemental, humorous, or formal.</li>
+<li><strong>Context:</strong> distinguish the podcast host’s claims and interpretations from independently verified facts.</li>
+<li><strong>Examples:</strong> add fresh sentences that reuse the pattern, not merely literal translations.</li>
+</ul>
+</section>
+</main>
+<footer>
+  Korean podcast study notes · Built from the user-provided transcript · English explanations with Korean examples and romanization
+</footer>
+</body>
+</html>
